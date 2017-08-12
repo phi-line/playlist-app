@@ -4,14 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Youtube Playlist</title>
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">
   </head>
   <body>
     <section class="hero is-danger is-fullheight">
       <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+      <div class="container video-container">
+        <div id="player" class="video-player"></div>
+      </div>
       <div class="hero-body">
         <div class="container has-text-centered">
-          <div id="player"></div>
           <input type="text" id="searchInput" placeholder="Please enter video">
           <input type="submit" id="searchSubmit" name="submitButton">
         </div>
