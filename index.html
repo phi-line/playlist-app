@@ -1,26 +1,39 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Youtube Playlist</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">
-    <script src="./scripts/q-script.js" defer></script>
-    <script src="./scripts/q-input.js" defer></script>
+    <link rel='stylesheet' href='index.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css'>
+    <script src='./scripts/q-script.js' defer></script>
+    <script src='./scripts/q-input.js' defer></script>
   </head>
   <body>
-    <section class="hero is-danger is-fullheight">
-      <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
-      <div class="container video-container">
-        <div id="player" class="video-player"></div>
-      </div>
-      <div class="hero-body">
-        <div class="container has-text-centered">
-          <input type="text" id="searchInput" placeholder="Please enter video">
-          <input type="submit" id="searchSubmit" name="submitButton">
+    <div class='hero-head'>
+      <header class='nav'>
+        <div class='container'>
+          <div class='nav-left'>
+            <a class='nav-item'>
+              <h1 class='app-logo'>Play With Us</h1>
+            </a>
+          </div>
         </div>
+      </header>
+    </div>
+    <div class='video-container'>
+      <div id='player' class='video-player'></div>
+    </div>
+    <section class='hero'>
+      <div class='container has-text-centered is-marginless'>
+        <input type='text' id='searchInput' class='link-input' placeholder='Please enter video'>
       </div>
     </section>
+
+    <input type="checkbox" id="drawer-toggle" name="drawer-toggle"/>
+    <label for="drawer-toggle" id="drawer-toggle-label"></label>
+    <div class="video-playlist">
+      
+    </div>
   </body>
 </html>
