@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Youtube Playlist</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">
+  </head>
   <body>
-    <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
-    <div id="player"></div>
-      <input type="text" id="searchInput" placeholder="Please enter video">
-      <input type="submit" id="searchSubmit" name="submitButton">
+    <section class="hero is-danger is-fullheight">
+      <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <div id="player"></div>
+          <input type="text" id="searchInput" placeholder="Please enter video">
+          <input type="submit" id="searchSubmit" name="submitButton">
+        </div>
+      </div>
+    </section>
 
     <script src="./scripts/q-script.js"></script>
   </body>
