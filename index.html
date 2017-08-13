@@ -6,20 +6,37 @@
     <title>Youtube Playlist</title>
     <link rel='stylesheet' href='index.css'>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src='https://www.youtube.com/iframe_api' defer></script>
     <script src='./scripts/q-script.js' defer></script>
     <script src='./scripts/q-input.js' defer></script>
   </head>
   <body>
-    <section class='hero is-danger is-fullheight'>
-      <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
-      <div class='container video-container'>
-        <div id='player' class='video-player'></div>
-      </div>
-      <div class='hero-body'>
-        <div class='container has-text-centered'>
-          <input type='text' id='searchInput' placeholder='Please enter video' ondrop='qVideo()' onpaste='qVideo()'>
+    <div class='hero-head'>
+      <header class='nav'>
+        <div class='container'>
+          <div class='nav-left'>
+            <a class='nav-item'>
+              <h1 class='app-logo'>Play With Us</h1>
+            </a>
+          </div>
+          <div class='nav-right'>
+            <span class="icon">
+              <i class="fa fa-bars" aria-hidden="true"></i>
+            </span>
+          </div>
         </div>
+      </header>
+    </div>
+    <div id="video-container" class='video-container'>
+      <div id='player' class='video-player'></div>
+      <div class='video-drawer'>
+
+      </div>
+    </div>
+    <section class='hero'>
+      <div class='container has-text-centered is-marginless'>
+        <input type='text' id='searchInput' placeholder='Please enter video' ondrop='qVideo()' onpaste='qVideo()'>
       </div>
     </section>
   </body>
