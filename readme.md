@@ -1,1 +1,3 @@
-This is an app that uses Youtube iFrame api!
+Queues YouTube videos.
+
+Web app: __https://phi-line.github.io/playlist-app/__
