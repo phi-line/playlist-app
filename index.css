@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
 body {
   font-family: sans-serif;
   background-color: rgb(255, 71, 71);
@@ -8,13 +14,17 @@ body {
 
 .nav {
   background-color: rgba(0,0,0,.5) !important;
+  color: #fff;
 }
 
 .app-logo {
   font-size: 2em;
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
-  color: #fff;
+}
+
+.hamburger {
+  font-size: 2em;
 }
 
 .container.video-container {
@@ -37,8 +47,4 @@ body {
 .video-player {
   display:block;
   margin-left: auto; margin-right: auto;
-}
-
-.link-input {
-
 }

@@ -6,6 +6,8 @@
     <title>Youtube Playlist</title>
     <link rel='stylesheet' href='index.css'>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://www.youtube.com/iframe_api' defer></script>
     <script src='./scripts/q-script.js' defer></script>
     <script src='./scripts/q-input.js' defer></script>
   </head>
@@ -18,22 +20,24 @@
               <h1 class='app-logo'>Play With Us</h1>
             </a>
           </div>
+          <div class='nav-right'>
+            <span class="icon">
+              <i class="fa fa-bars" aria-hidden="true"></i>
+            </span>
+          </div>
         </div>
       </header>
     </div>
-    <div class='video-container'>
+    <div id="video-container" class='video-container'>
       <div id='player' class='video-player'></div>
+      <div class='video-drawer'>
+        
+      </div>
     </div>
     <section class='hero'>
       <div class='container has-text-centered is-marginless'>
-        <input type='text' id='searchInput' class='link-input' placeholder='Please enter video'>
+        <input type='text' id='searchInput' placeholder='Please enter video' ondrop='qVideo()'>
       </div>
     </section>
-
-    <input type="checkbox" id="drawer-toggle" name="drawer-toggle"/>
-    <label for="drawer-toggle" id="drawer-toggle-label"></label>
-    <div class="video-playlist">
-      
-    </div>
   </body>
 </html>
