@@ -14,7 +14,7 @@ function qVideo(){
   let videoObj = { id: youtube[1], h: youtube[3] || 0, m: youtube[4] || 0, s: youtube[5] || youtube[2] || 0 };
   queue.push(videoObj);
   console.log('video queued');
-  let ytJSON = fetch();
+  //fetch
   console.log(apiRequest);
   preview.push(apiRequest);
   searchInput.value='';
