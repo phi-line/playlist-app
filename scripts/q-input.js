@@ -31,9 +31,23 @@ function getVideoDetails(id)
   {
     console.log('found video');
     console.log(data);
-    console.log(data.items[0].snippet.thumbnails.standard.url);
-    preview.push({thumbnail: data.items[0].snippet.thumbnails.standard.url, title: data.items[0].snippet.localized.title});
+    let video= {thumbnail: data.items[0].snippet.thumbnails.standard.url, title: data.items[0].snippet.localized.title};
+    preview.push(video);
     console.log(preview);
+    addToQue(video)
     return;
   });
+}
+
+function addToQue(video)
+{
+  let queue = document.getElementById('queue');
+  let videoPreview = document.createElement('div');
+  videoPreview.classList.add('videoPreview');
+  let videoImage = document.createElement('img');
+  videoImage.src = video.thumbnail;
+  let videoTitle = document.createTextNode(video.title);
+  videoPreview.appendChild(videoImage);
+  videoPreview.appendChild(videoTitle);
+  queue.appendChild(videoPreview);
 }

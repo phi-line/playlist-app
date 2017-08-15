@@ -48,3 +48,27 @@ body {
   display:block;
   margin-left: auto; margin-right: auto;
 }
+
+#queue
+{
+  overflow:scroll;
+}
+
+.videoPreview
+{
+  display: inline-block;
+  width: 100%;
+  padding: 10px 0 10px 0;
+}
+
+.videoPreview img
+{
+  width: 66.5px;
+  height: 50px;
+  float:left;
+}
+
+.videoPreview p
+{
+  float:left;
+}
