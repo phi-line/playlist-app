@@ -42,6 +42,7 @@ body {
   background: -webkit-linear-gradient(left, rgba(33,33,33,1) 0%, rgba(0,0,0,1) 50%, rgba(33,33,33,1) 100%);
   background: linear-gradient(to right, rgba(33,33,33,1) 0%, rgba(0,0,0,1) 50%, rgba(33,33,33,1) 100%);
   width: 100%;
+  position: absolute;
 }
 
 .video-player {
@@ -49,14 +50,9 @@ body {
   margin-left: auto; margin-right: auto;
 }
 
-#queue
-{
-  overflow:scroll;
-}
-
 .videoPreview
 {
-  display: inline-block;
+  display: flex;
   width: 100%;
   padding: 10px 0 10px 0;
 }
@@ -71,4 +67,42 @@ body {
 .videoPreview p
 {
   float:left;
+  width: 100%;
+}
+
+#queueButton
+{
+  float: right;
+  position: relative;
+  margin-top: 5px;
+  margin-right: 5px;
+  color: #FDFDFD;
+}
+
+#queue
+{
+  float: right;
+  position: relative;
+  max-width: calc((100% - 640px)/2 - 45px);
+  margin-right: 10px;
+  color: #FDFDFD;
+  max-height: 390px;
+  overflow: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
+#queue div img
+{
+  margin-right: 5px;
+}
+
+#searchInput
+{
+  position: absolute;
+  margin-top: 442px;
+  left: calc(50% - 65.5px);
 }

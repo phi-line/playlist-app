@@ -1,4 +1,5 @@
 const searchInput = document.getElementById('searchInput');
+const queueView = document.getElementById('queue');
 const queue = [];
 const preview = [];
 const apiKey='AIzaSyD24VdpNyV15o1uqGKFSNNCrJWhaRiU60U';
@@ -8,6 +9,17 @@ searchInput.onkeypress = function(e){
       qVideo();
     }
   }
+
+document.getElementById('queueButton').addEventListener("click", function(){
+  if(queueView.style.display === 'none')
+  {
+    queueView.style.display = 'block';
+  }
+  else
+  {
+    queueView.style.display = 'none';
+  }
+});
 
 function qVideo(){
   let youtube = parseInput();

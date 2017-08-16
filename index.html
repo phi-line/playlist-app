@@ -20,27 +20,21 @@
               <h1 class='app-logo'>Play With Us</h1>
             </a>
           </div>
-          <div class='nav-right'>
-            <span class="icon">
-              <i class="fa fa-bars" aria-hidden="true"></i>
-            </span>
-          </div>
         </div>
       </header>
     </div>
     <div id="video-container" class='video-container'>
       <div id='player' class='video-player'></div>
       <div class='video-drawer'>
-
+        <!--VIDEO-->
       </div>
     </div>
-    <section class='hero'>
-      <div class='container has-text-centered is-marginless'>
-        <input type='text' id='searchInput' placeholder='Please enter video' ondrop='qVideo()' onpaste='qVideo()'>
-      </div>
-    </section>
-    <div id="queue">
+    <span class="icon" id="queueButton">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </span>
+    <div id="queue" style="display:none">
       <!--Videos append here-->
     </div>
+    <input type='text' id='searchInput' placeholder='Please enter video' ondrop='qVideo()' onpaste='qVideo()'>
   </body>
 </html>
